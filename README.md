@@ -1,2 +1,2 @@
 # Software-University
-Course exercises | Software University | Biser Karadzhov
+Educational path | Software University | Biser Karadzhov
