@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  
+}
+#container {
+  max-width:  980px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+
+
+header, footer {
+  background-color: #B7B8B6;
+  padding: 8px 16px;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  margin: 16px 0;
+  display: inline-block;
+}
+
+h2 {
+  margin: 8px 0;
+}
+
+.drop {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.splash {
+  padding: 32px 64px;
+  margin: 64px;
+}
+
+article.preview {
+  margin-bottom: 32px;
+}
+
+article.preview div {
+  font-size:  80%;
+  color: #B7B8B6;
+  padding: 8px 16px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+label span {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  vertical-align: top;
+}
+
+label input {
+  width: 200px;
+}
+
+label textarea {
+  width: 300px;
+  height: 200px;
+}
+
+.narrow {
+  width: 400px;
+  margin: 64px auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.main {
+  margin: 32px;
+}
+
+.action {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 16px;
+  background-color: #34675C;
+  border: none;
+  color: white;
+}
+
+.action:hover {
+  cursor: pointer;
+  background-color: #B3C100;
+}
+.inline {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
+form {
+  margin: 16px 32px;
+}
+
+.forumLink {
+  margin: 8px 0;
+}
+
+.error input, .error textarea {
+  border: 1px solid red;
+}
+
+.error-msg {
+  color: red
+}
+
+.topic-content {
+  padding: 32px;
+}
+
+.controls {
+  float: right;
+}
+
