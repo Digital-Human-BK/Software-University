@@ -1,0 +1,19 @@
+{
+  "1111111111": {
+    "name": "Honda",
+    "price": 100
+  },
+  "2222222222": {
+    "name": "Toyota",
+    "price": 200
+  },
+  "3333333333": {
+    "name": "Nissan",
+    "price": 300
+  },
+  "b1ccb72c60": {
+    "name": "Subaru",
+    "price": 45000,
+    "promoted": true
+  }
+}
