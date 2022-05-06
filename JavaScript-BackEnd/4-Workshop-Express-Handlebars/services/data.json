@@ -1,0 +1,20 @@
+{
+  "awetc376": {
+    "name": "Acura NSX Type S",
+    "description": "Building on its racing lineage, the NSX Type S combines an aggressive design and aerodynamic components to create more downforce that helps keep you glued to the asphalt. The NSX GT3 Evo-inspired carbon fiber rear diffuser provides increased stability so you’re in control.",
+    "imageUrl": "acuraNSX.jpg",
+    "price": 169500
+  },
+  "afafb2f2": {
+    "name": "Toyota Supra",
+    "description": "Supra. A Latin word meaning ‘above’ or ‘transcending’. And fittingly, for a vehicle loved by so many, the name of Toyota’s most famous sports car.\r\n\r\nToday, over 16 years since production ended, the Supra still enjoys iconic status among sports car fans. From a starring role in the first Fast and the Furious movie to the choice of wheels for gamers in Gran Turismo® as well as for a generation of passionate tuners and drifters, the Supra has cemented its place in popular culture and inspired young and old around the world.",
+    "imageUrl": "toyotaSupra.jpg",
+    "price": 55000
+  },
+  "be6e986a": {
+    "name": "Nissan GTR R35",
+    "description": "Nissan challenged convention at every point of the Nissan GT-R’s development. Instead of a large, heavy engine thirsty for fuel, the Nissan GT-R is powered by an ideally sized, twin-turbocharged 3.8-L V6 that produces a prodigious 565 hp and equally immense 467 lb-ft of torque.\r\n It’s built with immense strength, from a closed-deck cylinder block to a ladder frame structure for added support. Just as important as the engineering is the actual assembly, which is done by hand by a single master craftsman, whose signature you’ll find on a small but prominent plaque.",
+    "imageUrl": "nissanGTR.jpg",
+    "price": 1150000
+  }
+}

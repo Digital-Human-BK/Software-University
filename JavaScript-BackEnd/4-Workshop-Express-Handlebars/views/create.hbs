@@ -1,0 +1,14 @@
+<h1>Create New Listing</h1>
+<div class="form">  
+  <form action="/create" method="POST">
+    <label for="name">Car Name</label>
+    <input type="text" id="name" name="name" value="{{car.name}}" placeholder="Car make and model">
+    <label for="description">Description</label>
+    <textarea id="description" name="description" placeholder="Brief description of the vehicle">{{car.description}}</textarea>
+    <label for="image">Image Url</label>
+    <input type="text" id="image" name="imageUrl" value="{{car.imageUrl}}" placeholder="Valid URL, starting with http:// or https://">
+    <label for="price">Price</label>
+    <input type="number" name="price" id="price" value="{{car.price}}" placeholder="Car price">   
+    <input type="submit" value="Create">
+  </form>  
+</div>

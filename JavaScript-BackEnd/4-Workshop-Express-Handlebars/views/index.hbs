@@ -1,0 +1,16 @@
+<h1>Browser</h1>
+<form action="/" method="GET">
+  <input type="text" class="search" name="search" placeholder="Search..." value="{{query.search}}">
+  <input type="number" name="from" class="difficulty" placeholder="Price from..." value="{{query.from}}">
+  <span>-</span>
+  <input type="number" name="to" class="difficulty" placeholder="Price to..." value="{{query.to}}">
+  <input type="submit" value="search">
+</form>
+{{#each cars}}
+{{> carPreview}}
+{{else}}
+<h2>&#128169 Sorry, no cars in the database. <a href="/create" class="dark">>Create the first listing<< /a> &#128169</h2>
+{{/each}}
+
+{{!-- some client side code if needed --}}
+{{!-- <script src="/static/js/app.js"></script> --}}

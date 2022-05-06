@@ -1,0 +1,16 @@
+{{#with car}}
+<h1>Edit Listing</h1>
+<div class="form">
+  <form action="/edit/{{id}}" method="POST">
+    <label for="name">Car Title</label>
+    <input type="text" id="name" name="name" value="{{name}}">
+    <label for="description">Description</label>
+    <textarea id="description" name="description">{{description}}</textarea>
+    <label for="image">Image Url</label>
+    <input type="text" id="image" name="imageUrl" value="{{imageUrl}}">
+    <label for="price">Price</label>
+    <input type="number" name="price" id="price" value="{{price}}">    
+    <input type="submit" value="Save Changes">
+  </form>
+</div>
+{{/with}}

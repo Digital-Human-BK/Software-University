@@ -1,0 +1,16 @@
+{{#with car}}
+<h1>Delete Listing</h1>
+<div class="form">
+  <form action="/delete/{{id}}" method="POST">
+    <label for="name">&#160;&#160;&#160;Car Title&#160;&#160;&#160;</label>
+    <input type="text" id="name" name="name" value="{{name}}" disabled>
+    <label for="description">Description</label>
+    <textarea id="description" name="description" disabled>{{description}}</textarea>
+    <label for="image">&#160;Image Url&#160;</label>
+    <input type="text" id="image" name="imageUrl" value="{{imageUrl}}" disabled>
+    <label for="price">&#160;&#160;&#160;&#160;&#160;Price&#160;&#160;&#160;&#160;&#160;</label>
+    <input type="number" name="price" id="price" value="{{price}}" disabled>    
+    <input type="submit" value="Confirm Delete">
+  </form>
+</div>
+{{/with}}
