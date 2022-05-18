@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <div>
+      {{!-- <div class="notification loadingBox">
+        Loading …
+      </div>
+      <div class="notification infoBox">
+        <span>Info</span>
+      </div> --}}
+      {{#if errors}}
+      <div class="notification errorBox">
+        {{#each errors}}
+        <p>{{msg}}</p>
+        {{/each}}
+      </div>
+      {{/if}}
+    </div>
+
+
+    <nav>
+      {{#if hasUser}}
+      <div class="left-container">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/create">Add +</a></li>
+        </ul>
+      </div>
+      <div class="right-container">
+        <a href="/profile" class="log-out">{{user.username}}</a>
+        <a href="/logout" class="log-out">Logout</a>
+      </div>
+      {{else}}
+      <div class="left-container">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        </ul>
+      </div>
+      {{/if}}
+    </nav>
+
+    {{{body}}}
+
+    <footer>@SoftUni - JS Back-end - BookingUni 2020</footer>
+  </div>
+
+</body>
+
+</html>

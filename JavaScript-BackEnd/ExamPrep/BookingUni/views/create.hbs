@@ -1,0 +1,17 @@
+{{#with data}}
+<section id="viewAddhotel">
+    <h2>Add new hotel</h2>
+    <form id="formAddhotel" action="/create" method="post">
+        <label for="hotel">Hotel name:</label>
+        <input type="text" id="hotel" name="name" placeholder="Hotel name" value="{{name}}">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City" value="{{city}}">
+        <label for="free-rooms">Free rooms:</label>
+        <input type="number" id="free-rooms" name="freeRooms" placeholder="Free rooms" value="{{freeRooms}}">
+        <label for="imgUrl">Image:</label>
+        <input type="text" id="imgUrl" name="img" placeholder="https://" value="{{img}}">
+
+        <input type="submit" class="create" value="Add">
+    </form>
+</section>
+{{/with}}
