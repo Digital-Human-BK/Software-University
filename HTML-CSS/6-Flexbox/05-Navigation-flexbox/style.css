@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+body {
+  padding: 50px;
+}
+
+header {
+  display: flex;
+  border-bottom: 2px solid rgb(0,0,0);
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  margin: 10px 0;
+}
+
+header nav {
+  width: 40%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+li {
+  width: 25%;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0,153,0);
+}
+
+
