@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+h2{
+  width: 100%;
+}
+
+.cards-layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.masonry{
+  align-content: flex-start;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid gray;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card section {
+  padding: 5px;
+}
+
+footer {
+  padding: 5px;
+  border-top: 1px solid gray;
+}
