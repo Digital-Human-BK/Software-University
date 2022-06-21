@@ -1,0 +1,34 @@
+@media (max-width: 600px) {
+  .tm-section-title {
+    margin: auto;
+    width: 65%;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .row .tm-gallery {
+    display: block;
+  }
+  .tm-gallery-item {
+    max-width: 100%;
+  }
+
+  .tm-gallery-page {
+    width: 70%;
+    margin: auto;
+  }
+
+  .tm-gallery {
+    margin-left: 0;
+  }
+
+  .tm-gallery-img {
+    width: 100%;
+  }
+
+  .tm-cta-section {
+    width: 90%;
+  }
+}
