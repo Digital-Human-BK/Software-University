@@ -1,0 +1,76 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+form {
+  width: 600px;
+  margin: 100px auto;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 30px;
+  width: 600px;
+  height: 300px;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+legend {
+  width: 30%;
+  padding: 10px 10px;
+  background-color: #f6f6f6;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: -3px -3px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+form p {
+  font-weight: 700;
+}
+
+form input {
+  width: 100%;
+  padding: 8px 30px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+form input:focus {
+  color: rgb(42, 32, 226);
+  background-color: antiquewhite;
+  outline: none;
+}
+
+.username,
+.pass {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  left: 93px;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+  align-self: flex-start;
+  cursor: pointer;
+}
