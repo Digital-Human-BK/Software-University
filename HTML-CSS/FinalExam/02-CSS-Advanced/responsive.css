@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px) {
+  /* Plese provide classes next time. This is why I used CSS selectors from the browser */
+  main {
+    width: 100%;
+  }
+
+  .left-to-right:first-child {
+    padding: 3rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.left-to-right article{
+    padding: 1rem 5rem;
+    border-radius: 25%;
+    width: 100%;
+    height: unset;
+    min-height: 450px;
+  }
+  section.left-to-right article button{
+    display: none;
+  }
+
+  main section:nth-child(2) {
+    flex-direction: column;
+  }
+  main section:nth-child(2) button {
+    display: none;
+  }
+
+  main section.left-to-right:nth-child(3) {
+    justify-content: center;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) {
+    flex-direction: column;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1){
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1) > form:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1) > form:nth-child(1) label{
+    width: 100%;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1) > form:nth-child(1) input,
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1) > form:nth-child(1) textarea {
+    width: 100%;
+  }
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(1) > form:nth-child(1) > label:nth-child(4) {
+    text-align: center;
+  }
+
+  #send {
+    width: unset;
+  }
+
+  body > main:nth-child(1) > section:nth-child(4) > article:nth-child(2) > img:nth-child(1) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
