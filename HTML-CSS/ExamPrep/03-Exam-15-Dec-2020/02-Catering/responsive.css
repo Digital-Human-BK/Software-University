@@ -1,0 +1,23 @@
+/* TODO: Add the responsive styles here */
+
+@media screen and (max-width: 600px){
+  .w3-right {
+    display: none;
+  }
+
+  article.m6:nth-child(1) {
+    display: none;
+  }
+
+  article.m6:nth-child(2) {
+    width: 100%;
+  }
+
+  article.l6:nth-child(1){
+    width: 100%;
+  }
+
+  article.l6:nth-child(2){
+    width: 100%;
+  }
+}
