@@ -37,7 +37,7 @@
 | **Course**                                                                                  | **Link**                                                                    |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | <a href="https://softuni.bg/trainings/3726/html-and-css-may-2022"> HTML & CSS - May 2022 </a>          | <a href="https://softuni.bg/certificates/details/136971/5b69171b"> Link </a> |
-| <a href="https://softuni.bg/trainings/3727/reactjs-june-2022"> ReactJS - Jun 2022 </a> | <a href=""> Link </a> |
+| <a href="https://softuni.bg/trainings/3727/reactjs-june-2022"> ReactJS - Jun 2022 </a> | <a href="https://softuni.bg/certificates/details/140655/8cf2cf4d"> Link </a> |
 
 </td>
 
