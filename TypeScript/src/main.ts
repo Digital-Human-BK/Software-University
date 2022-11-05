@@ -1,71 +1,35 @@
-let stringArr = ['one', 'two', 'three'];
-let carArr = ['Honda', 'Accord', 2003];
-let mixedData = ['Car', 2015, true];
+type str = string;
+type union = string | number;
+type literal = 'hello';
 
-// stringArr[0] = 22; //error
-// stringArr.push(22); //error
+//convert to more or less specific
 
-// carArr[0] = true; //error
+let a: str = 'hello';
+let b = a as union; //less specific type
+let c = a as literal; // more specific type
 
-// carArr = mixedData //error
-mixedData = carArr; //any data can be assigned to string | number union type
 
-let test = []; //type any
-let typeTest: string[] = []; //array of strings
-typeTest.push('test');
+//Type assertion/casting
+const addOrConcat = (
+  a: number,
+  b: number,
+  c: 'add' | 'concat'
+): number | string => {
+  if(c === 'add') return a + b;
+  return '' + a + b;
+};
 
-//Tuple
-let myTuple: [string, number, boolean] = ['Mike', 33, true];
-let mixed = ['Mike', 34, true];
+const myVal: string = addOrConcat(2,2, 'concat') as string;
 
-// myTuple = mixed; //error as it requires exactly 3 elements of the specified type at the specified position;
-// myTuple[2] = 3 //error type is different than specified one
-myTuple[1] = 35;
-mixed = myTuple;
+//Danger! TS sees no problem but string is returned
+const myVal2: number = addOrConcat(2,2, 'concat') as number;
 
-let myObj: object;
-myObj = {};
+// 10 as string //TS finds the errors where it can
+(10 as unknown) as string //double casting
 
-const exampleObj = {
-  prop1: 'Mike',
-  prop2: 33
-}
+//The DOM
+const img = document.querySelector('img')!; //not null
+const img2 = document.getElementById('#img') as HTMLImageElement;
 
-// exampleObj.prop1 = 22 //error prop1 is assigned as string
-
-//Type Annotation 
-type TestPerson = {
-  name?: string,
-  active?: boolean,
-  hobbies: (string | number)[]
-}
-
-let person: TestPerson = {
-  name: 'John',
-  active: false,
-  hobbies: [1, 'Gaming'],
-}
-
-let person2: TestPerson = {
-  name: 'Chester',
-  //active is optional cuz of the question mark in the TestPerson
-  hobbies: [1, 'string']
-}
-// person2.age = 22 //error property does not exist on TestPerson
-
-const greetPerson = (person: TestPerson) => {
-  return `Hello ${person.name?.toLocaleUpperCase()}`
-}
-console.log(greetPerson(person2));
-
-//Enums 
-//Unlike most TypeScript features, Enums are not a type-level addition to JS but something added to the language at runtime.
-
-enum Days {
-  Monday = 1,
-  Tuesday,
-  Wednesday,
-  Thursday,
-  Friday
-}
-console.log(Days.Monday);
+img.src
+img2.src
